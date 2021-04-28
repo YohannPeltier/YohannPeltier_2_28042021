@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-VariableFont_wght.ttf');
+}
+
+body{
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 0 25px 0 25px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .logo{
+    margin-top: 44px;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    margin: 0;
+}
+
+header nav,ul,li{
+    display: inline-block;
+}
+
+header li,a.register{
+    padding: 40px 25px 25px;
+}
+
+header li.active{
+    border-top: 2px solid #0065FC;
+}
+
+header li.active a{
+    color: #0065FC;
+}
+
+header a.register{
+    color: #0065FC;
+    font-weight: bold;
+}
