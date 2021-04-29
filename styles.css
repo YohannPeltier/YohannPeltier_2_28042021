@@ -101,6 +101,7 @@ header .register a {
 }
 /* Personnalisation du Label */
 #search .filter_container {
+    white-space:nowrap;
     position: relative;
     padding: 0 15px 0 60px;
     cursor: pointer;
@@ -166,4 +167,42 @@ header .register a {
     line-height: 24px;
     font-size: 0.8em;
     color: #0065FC;
+}
+
+/* Section Résultats */
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    margin-top: 30px;
+}
+
+/* Section Hébergements */
+#hebergements {
+    flex: 2;
+    min-width: 420px;
+}
+
+/* Aside Populaires */
+#populaires {
+    flex: 1;
+    min-width: 210px;
+}
+
+/* Section Activités */
+#activites {
+    flex: 100%;
+    border-radius: 20px;
+}
+
+/* Section Hébergements et Populaires */
+.all_hebergements {
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 37px;
+}
+.all_hebergements h1{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
 }
