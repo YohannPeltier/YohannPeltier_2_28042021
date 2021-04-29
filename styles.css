@@ -3,48 +3,167 @@
     src: url('fonts/Raleway-VariableFont_wght.ttf');
 }
 
-body{
+body, button, input {
     font-family: 'Raleway', Arial, sans-serif;
+}
+
+body {
     max-width: 1340px;
     margin: auto;
     padding: 0 25px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 
-header .logo{
-    margin-top: 44px;
+/* Header */
+header .logo {
+    margin-top: 40px;
 }
-
-header nav{
+header nav {
     float: right;
 }
-
-header nav ul{
+header nav ul {
     margin: 0;
 }
-
-header nav,ul,li{
+header nav, ul, li {
     display: inline-block;
 }
-
-header li,.register{
+header li, .register {
     padding: 40px 25px 25px;
     border-top: 2px solid #FFF;
 }
-
-header li:hover,li.active{
+header li:hover,li.active {
     border-top: 2px solid #0065FC;
 }
-
-header li:hover a,li.active a{
+header li:hover a,li.active a {
     color: #0065FC;
 }
-
-header .register a{
+header .register a {
     color: #0065FC;
     font-weight: bold;
+}
+
+/* Barre de recherche */
+#search {
+    margin-top: 40px;
+}
+#search h1 {
+    margin: 0;
+    font-size: 1.3em;
+}
+#search p {
+    margin: 5px 0 15px;
+}
+#search .place_container {
+    display: flex;
+    max-width: 420px;
+    height: 50px;
+}
+#search .place_container > span {
+    background: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    text-align: center;
+}
+#search .place_container > span > i {
+    line-height: 50px;
+}
+#search .place_container > input {
+    flex: 1;
+    border: 1px solid #f2f2f2;
+    padding: 0 18px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#search .place_container button {
+    color: #FFF;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0 18px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#search .filters_container {
+    display: flex;
+    height: 50px;
+    margin: 30px 0;
+}
+#search .filters_container h2 {
+    margin: 0;
+    line-height: 50px;
+    margin-right: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* Personnalisation du Label */
+#search .filter_container {
+    position: relative;
+    padding: 0 15px 0 60px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 46px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    margin: 0 12px;
+}
+/* Masquer checkbox par defaut */
+#search .filter_container input {
+    display:none;
+}
+/* Créer checkbox personnalisé */
+.filter_container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #DEEBFF;
+    text-align: center;
+    margin: -2px 0 0 -2px;
+}
+.filter_container .checkmark i {
+    line-height: 50px;
+    color: #0065FC;
+}
+/* Survol du Label */
+.filter_container:hover  {
+    color: #0065FC;
+}
+.filter_container:hover input ~ .checkmark {
+    background-color: #0065FC;
+}
+.filter_container:hover input ~ .checkmark i {
+    color: #DEEBFF;
+}
+/* Checkbox checked */
+.filter_container input:checked ~ .checkmark {
+    background-color: #0065FC;
+}
+.filter_container input:checked ~ .checkmark i {
+    color: #DEEBFF;
+}
+
+/* Info recherche */
+.info_search{
+    display: flex;
+    height: 24px;
+    line-height: 26px;
+}
+.info_search span{
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    width: 22px;
+    text-align: center;
+    margin-right: 12px;
+}
+.info_search span i{
+    line-height: 24px;
+    font-size: 0.8em;
+    color: #0065FC;
 }

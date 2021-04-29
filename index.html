@@ -1,7 +1,8 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css" />
+        <link href="styles.css" rel="stylesheet" />
+        <link href="fonts/icons/css/all.css" rel="stylesheet">
         <title>Reservia</title>
     </head>
     <body>
@@ -15,7 +16,40 @@
                 <span class="register"><a href="#">S'inscrire</a></span>
             </nav>
         </header>
-        <section id="search"></section>
+        <section id="search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou  en pleine nature</p>
+            <form action="" method="get">
+                <div class="place_container">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <input value="Marseille, France" name="place" required/>
+                    <button>Rechercher</button>
+                </div>
+                <div class="filters_container">
+                    <h2>Filtres</h2>
+                    <label class="filter_container">&Eacuteconomique
+                        <input type="checkbox">
+                        <span class="checkmark"><i class="fas fa-money-bill-wave"></i></span>
+                    </label>
+                    <label class="filter_container">Familial
+                        <input type="checkbox">
+                        <span class="checkmark"><i class="fas fa-child"></i></span>
+                    </label>
+                    <label class="filter_container">Romantique
+                        <input type="checkbox">
+                        <span class="checkmark"><i class="fas fa-heart"></i></span>
+                    </label>
+                    <label class="filter_container">Animaux autorisés
+                        <input type="checkbox">
+                        <span class="checkmark"><i class="fas fa-dog"></i></span>
+                    </label>
+                </div>
+            </form>
+            <span class="info_search">
+                <span><i class="fas fa-info"></i></span>
+                Plus de 500 logements sont disponibles dans cette ville
+            </span>
+        </section>
         <section id="herbergements"></section>
         <aside  id="populaires"></aside>
         <section id="activites"></section>
