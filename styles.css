@@ -5,7 +5,9 @@
 
 body{
     font-family: 'Raleway', Arial, sans-serif;
-    margin: 0 25px 0 25px;
+    max-width: 1340px;
+    margin: auto;
+    padding: 0 25px;
 }
 
 a{
@@ -29,19 +31,20 @@ header nav,ul,li{
     display: inline-block;
 }
 
-header li,a.register{
+header li,.register{
     padding: 40px 25px 25px;
+    border-top: 2px solid #FFF;
 }
 
-header li.active{
+header li:hover,li.active{
     border-top: 2px solid #0065FC;
 }
 
-header li.active a{
+header li:hover a,li.active a{
     color: #0065FC;
 }
 
-header a.register{
+header .register a{
     color: #0065FC;
     font-weight: bold;
 }
