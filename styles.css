@@ -173,7 +173,7 @@ header .register a {
 #results {
     display: flex;
     flex-wrap: wrap;
-    gap:40px;
+    gap: 40px;
     margin-top: 30px;
 }
 
@@ -181,6 +181,54 @@ header .register a {
 #hebergements {
     flex: 2;
     min-width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+#hebergements .more {
+    flex: 100%;
+    font-weight: bold;
+}
+#hebergements .card {
+    flex: calc(30% - 25px);
+}
+#hebergements .card img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+
+/* Card */
+.card {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    max-height: 105px;
+    object-fit:cover;
+}
+.card .infos {
+    margin: 0 10px 0;
+}
+.card h3 {
+    font-size: 1em;
+    margin: 10px 0 8px;
+}
+.card span {
+    font-size: 0.8em;
+}
+.card .price {
+    font-weight: bold;
+}
+.card .rate {
+    margin: 8px 10px;
+    line-height: 0.7em;
+    color: #d9d9d9;
+    font-size: 0.7em;
+}
+.card .rate .active{
+    color: #0065FC;
 }
 
 /* Aside Populaires */
@@ -195,14 +243,14 @@ header .register a {
     border-radius: 20px;
 }
 
-/* Section Hébergements et Populaires */
-.all_hebergements {
+/* Section Hébergements et Aside Populaires */
+#hebergements, #populaires {
     background: #f2f2f2;
     border-radius: 20px;
     padding: 37px;
 }
-.all_hebergements h1{
+#hebergements h2, #populaires h2{
     font-size: 1.2em;
-    font-weight: bold;
+    flex: 100%;
     margin: 0;
 }
