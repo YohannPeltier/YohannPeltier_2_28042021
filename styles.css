@@ -10,9 +10,10 @@ input {
 }
 
 body {
-	margin: 0;
+	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
+	max-width: 1400px;
 }
 
 a {
@@ -378,6 +379,10 @@ footer .column ul {
 
 /* Ipad */
 @media (max-width: 991.98px){
+	body{
+		margin:0;
+		max-width: initial;
+	}
 	/* Header */
 	header {
 		font-size: 1.1rem;
