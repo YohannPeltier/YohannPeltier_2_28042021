@@ -211,7 +211,7 @@ header .register a {
 }
 #hebergements .card {
 	flex: calc(33% - 5%);
-	min-width: 14.2rem;
+	min-width: 11rem;
 	padding: 0.3rem;
 }
 #hebergements .card .infos {
@@ -228,6 +228,8 @@ header .register a {
 	flex: 1;
 	row-gap: 2.3rem;
 	margin-left: 0;
+	flex-direction: column;
+	align-content: stretch;
 }
 #populaires h2 i {
 	float: right;
@@ -427,6 +429,9 @@ footer .column ul {
 	/* Hébergements */
 	#hebergements {
 		order: 4;
+	}
+	#hebergements .card{
+		min-width: 14rem;
 	}
 	#hebergements .more {
 		margin: 4% 0 0;
