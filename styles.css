@@ -579,9 +579,7 @@ footer .column ul {
 	#activites .card {
 		flex-direction: column;
 		margin: 0.8rem 0;
-	}
-	#activites .card img {
-		max-height: 13rem;
+		height: 10rem !important;
 	}
 	/* Footer */
 	footer {
