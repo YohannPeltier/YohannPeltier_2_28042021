@@ -372,7 +372,7 @@ footer .column ul {
 	padding: 0;
 }
 
-/* Activation du survol des filtre lorsque l'appareil le premet */
+/* Activation de certains hover lorsque l'appareil le premet */
 @media (any-hover: hover) {
 	/* Survol du Label */
 	.filter_container:hover {
@@ -383,6 +383,10 @@ footer .column ul {
 	}
 	.filter_container:hover input ~ .checkmark i {
 		color: #deebff;
+	}
+	/* Survol des cards */
+	.card:hover {
+		transform: scale(1.02);
 	}
 }
 
