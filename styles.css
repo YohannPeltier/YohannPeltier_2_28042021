@@ -10,11 +10,17 @@ input {
 }
 
 body {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	min-width: 320px;
+}
+
+main {
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 1400px;
-	min-width: 320px;
 }
 
 a {
@@ -24,7 +30,7 @@ a {
 
 /* Header */
 header {
-	margin: 0 2em;
+	margin: 0 3%;
 	width: 100%;
 	display: flex;
 }
@@ -188,7 +194,6 @@ header .register a {
 	padding: 2.3rem 3%;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: flex-start;
 	margin: 0 3%;
 }
 
@@ -382,7 +387,6 @@ footer .column ul {
 /* Ipad */
 @media (max-width: 991.98px) {
 	body {
-		margin: 0;
 		max-width: initial;
 	}
 	/* Header */
