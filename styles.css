@@ -353,12 +353,14 @@ footer {
 	background: #d9d9d9;
 	padding: 3%;
 	width: 100%;
+	justify-content: center;
 }
 footer .column {
 	flex: 33%;
 	display: flex;
 	flex-direction: column;
 	line-height: 1.9rem;
+	max-width: 438px;
 }
 footer .column h2 {
 	margin: 0;
